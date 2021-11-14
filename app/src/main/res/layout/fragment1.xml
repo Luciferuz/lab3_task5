@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".Fragment1">
+    tools:context=".Fragment1"
+    android:id="@+id/fragment1">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvAbout"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:background="@color/black"
@@ -21,26 +22,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/toSecond"
+        android:id="@+id/bnToSecond"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:textSize="30sp"
         android:text="@string/to_second"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:foregroundGravity="center"
-        app:itemTextColor="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_bottom_nav" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAbout" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

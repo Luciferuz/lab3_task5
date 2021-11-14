@@ -13,20 +13,13 @@ class Fragment3 : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val binding = Fragment3Binding.inflate(layoutInflater)
         val navigationController = findNavController()
-        binding.toFirst.setOnClickListener {
+        binding.bnToFirst.setOnClickListener {
             navigationController.navigate(R.id.action_fragment3_to_fragment1)
         }
-        binding.toSecond.setOnClickListener {
+        binding.bnToSecond.setOnClickListener {
             navigationController.navigate(R.id.action_fragment3_to_fragment2)
         }
-        binding.bottomNavigation.setOnNavigationItemSelectedListener {
-            when (it.itemId) {
-                R.id.to_about -> {
-                    navigationController.navigate(R.id.global_about)
-                }
-            }
-            false
-        }
+
         return binding.root
     }
 }

@@ -9,7 +9,7 @@
         android:id="@+id/fragment1"
         android:name="com.example.task5.Fragment1"
         android:label="fragment_1"
-        tools:layout="@layout/fragment_1" >
+        tools:layout="@layout/fragment1" >
         <action
             android:id="@+id/action_fragment1_to_fragment2"
             app:destination="@id/fragment2" />
@@ -18,7 +18,7 @@
         android:id="@+id/fragment2"
         android:name="com.example.task5.Fragment2"
         android:label="fragment_2"
-        tools:layout="@layout/fragment_2" >
+        tools:layout="@layout/fragment2" >
         <action
             android:id="@+id/action_fragment2_to_fragment3"
             app:destination="@id/fragment3" />
@@ -32,7 +32,7 @@
         android:id="@+id/fragment3"
         android:name="com.example.task5.Fragment3"
         android:label="fragment_3"
-        tools:layout="@layout/fragment_3" >
+        tools:layout="@layout/fragment3" >
         <action
             android:id="@+id/action_fragment3_to_fragment1"
             app:destination="@id/fragment1"
@@ -50,5 +50,5 @@
         android:id="@+id/activityAbout"
         android:name="com.example.task5.ActivityAbout"
         android:label="activity_about"
-        tools:layout="@layout/about" />
+        tools:layout="@layout/activity_about" />
 </navigation>
